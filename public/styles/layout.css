@@ -15,9 +15,17 @@ html {
  */
 
 body {
-  margin: 0;
+  margin: 0px;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  background-color: white;
+  margin: auto;
+  padding: 140px 2em;
+  width: 450px;
 }
 
 /*
