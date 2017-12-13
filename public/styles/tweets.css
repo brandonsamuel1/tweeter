@@ -1,0 +1,53 @@
+.tweet {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.tweetBody {
+  margin: 30px 10px;
+}
+
+
+.tweetHandle {
+  float: right;
+  padding-right: 10px;
+}
+
+.tweetHead {
+  background-color: #EEE;
+  padding: 5px;
+}
+
+.tweet:hover .icons {
+  opacity: 1;
+}
+
+.tweetFoot {
+  border-top: 1px solid;
+  padding: 10px 5px;
+}
+
+.tweetName {
+  display: inline;
+  margin-left: 10px;
+  margin-top: 40px;
+  vertical-align: 30px;
+}
+
+.icons {
+  color: #00A087;
+  float: right;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.icons i {
+  padding-right: 5px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}

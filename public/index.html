@@ -7,14 +7,18 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/styles/nav.css">
     <link rel="stylesheet" type="text/css" href="/styles/new-tweet.css">
+    <link rel="stylesheet" type="text/css" href="/styles/tweets.css">
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/vendor/moment.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
@@ -27,6 +31,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <button class="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -34,22 +39,17 @@
 
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <form id="newTweetForm" method="POST" action="/tweets">
           <textarea class="tweetbox" name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit. Egestas integer eget aliquet nibh praesent tristique magna sit. Adipiscing bibendum est ultricies integer. Nisl purus in mollis nunc sed id. Amet purus gravida quis blandit turpis. Donec pretium vulputate sapien nec sagittis aliquam. Ultrices neque ornare aenean euismod elementum nisi. Nibh cras pulvinar mattis nunc sed blandit libero. Elit at imperdiet dui accumsan sit amet. Massa sed elementum tempus egestas sed sed risus pretium quam. Aenean euismod elementum nisi quis. Vulputate ut pharetra sit amet aliquam.</p>
+       <section class="allTweets">
 
-    <p>Ac auctor augue mauris augue neque gravida in fermentum et. Enim diam vulputate ut pharetra sit amet aliquam. Purus semper eget duis at tellus. Purus sit amet luctus venenatis lectus. Euismod lacinia at quis risus. Id porta nibh venenatis cras sed felis eget. Dui nunc mattis enim ut tellus elementum sagittis vitae et. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. In eu mi bibendum neque egestas congue. Viverra accumsan in nisl nisi scelerisque eu. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Lacus vel facilisis volutpat est velit egestas. Id cursus metus aliquam eleifend. Eget egestas purus viverra accumsan in nisl nisi.</p>
+      </section>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis auctor. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Non enim praesent elementum facilisis leo vel fringilla. Elementum integer enim neque volutpat ac tincidunt vitae semper. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Sem integer vitae justo eget magna fermentum iaculis eu non. Volutpat lacus laoreet non curabitur gravida. Sociis natoque penatibus et magnis dis parturient montes. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Odio pellentesque diam volutpat commodo sed. Malesuada fames ac turpis egestas integer. Eget dolor morbi non arcu risus quis varius quam. Et tortor at risus viverra adipiscing. Vitae nunc sed velit dignissim sodales ut eu sem integer. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Et leo duis ut diam.</p>
-
-    <p>Nulla porttitor massa id neque aliquam. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Ut morbi tincidunt augue interdum velit. Proin nibh nisl condimentum id venenatis a condimentum vitae. Vitae auctor eu augue ut lectus arcu bibendum. Non pulvinar neque laoreet suspendisse. Volutpat blandit aliquam etiam erat velit scelerisque. Tristique risus nec feugiat in fermentum. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Mattis aliquam faucibus purus in. Pretium quam vulputate dignissim suspendisse. Tincidunt ornare massa eget egestas purus viverra accumsan. Pharetra massa massa ultricies mi quis. Egestas maecenas pharetra convallis posuere morbi leo. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Mattis nunc sed blandit libero volutpat sed cras ornare.</p>
-
-    <p>Massa vitae tortor condimentum lacinia. Lectus urna duis convallis convallis tellus id. Velit ut tortor pretium viverra suspendisse potenti nullam ac. Tristique sollicitudin nibh sit amet commodo nulla. A lacus vestibulum sed arcu non odio. Quis blandit turpis cursus in hac habitasse platea dictumst. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Porttitor leo a diam sollicitudin tempor id eu nisl. Sit amet facilisis magna etiam tempor. Justo laoreet sit amet cursus sit. Facilisi morbi tempus iaculis urna. Etiam erat velit scelerisque in dictum non consectetur a erat. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus.</p>
     </main>
 
 

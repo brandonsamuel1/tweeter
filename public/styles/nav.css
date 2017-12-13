@@ -22,3 +22,21 @@
   padding-left: 10px;
   line-height: 80px;
 }
+
+#nav-bar .button {
+  background-color: #F7FFF4;
+  border-radius: 5px;
+  float: right;
+  padding: 20px;
+  margin: 10px;
+}
+
+#nav-bar .button > i {
+  color: #00A087;
+}
+
+#nav-bar .button:hover {
+  background-color: white;
+  border: 1px solid;
+  border-color: #498fff;
+}
