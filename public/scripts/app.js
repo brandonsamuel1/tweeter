@@ -148,7 +148,6 @@ $(function() {
         success: function(loadTweets){
           console.log('Success: ', loadTweets);
           renderTweets($('.allTweets'), loadTweets);
-          //$button.replaceWith(loadTweets)
         }
       })
     })
