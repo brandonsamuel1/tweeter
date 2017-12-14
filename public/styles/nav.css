@@ -40,3 +40,7 @@
   border: 1px solid;
   border-color: #498fff;
 }
+
+#nav-bar .button > span {
+  color: #00A087;
+}
