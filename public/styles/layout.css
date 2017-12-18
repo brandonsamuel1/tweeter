@@ -53,6 +53,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 335px) {
+  #nav-bar .header {
+    display: none;
+  }
+}
+
 @media print {
   #nav-bar {
     display: none;
